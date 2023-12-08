@@ -61,7 +61,7 @@ Released memory with ID 4
 When you are running yout application on a remote server, even with the following `JAVA_TOOL_OPTIONS` exposed, you might still run into difficulties connecting to it via VisualVM
 
 ```
-export JAVA_TOOL_OPTIONS="-Dcom.sun.management.jmxremote.port=9010 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.rmi.port=9010 -Dcom.sun.management.jmxremote.host=0.0.0.0 -Djava.rmi.server.hostname=0.0.0.0
+export JAVA_TOOL_OPTIONS="-Dcom.sun.management.jmxremote.port=9010 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.rmi.port=9010 -Dcom.sun.management.jmxremote.host=0.0.0.0 -Djava.rmi.server.hostname=0.0.0.0"
 ```
 
 In that case you need to setup a tunnel (replace 1.2.3.4 with your public ip address)
