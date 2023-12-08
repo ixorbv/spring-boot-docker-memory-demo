@@ -19,7 +19,7 @@ public class MemoryController {
         long id = idGenerator.incrementAndGet();
 
         // Allocate memory
-        byte[] memoryBlock = new byte[(int) size * 1000000];
+        byte[] memoryBlock = new byte[(int) size * 1024 * 1024];
         memoryMap.put(id, memoryBlock);
 
         return "Allocated " + size + " megabytes of memory with ID " + id;
