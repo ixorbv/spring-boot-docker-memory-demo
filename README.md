@@ -24,6 +24,16 @@ mvn spring-boot:run
 ```
 
 ### Build the docker image
+
+Either using docker
+
+```
+mvn clean install
+docker build -t ixor/memory-demo .
+```
+
+or via the JIB maven plugin
+
 ```
 mvn compile jib:dockerBuild
 ```
