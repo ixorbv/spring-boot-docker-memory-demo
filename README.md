@@ -67,7 +67,7 @@ export JAVA_TOOL_OPTIONS="-Dcom.sun.management.jmxremote.port=9010 -Dcom.sun.man
 In that case you need to setup a tunnel (replace 1.2.3.4 with your public ip address)
 
 ```
-ssh -i ~/.ssh/first-tutorial-key.cer ec2-user@1.2.3.4 -N -L 0.0.0.0:9010:127.0.0.1:9010
+ssh -i ~/.ssh/ec2-test-keypair.pem ec2-user@1.2.3.4 -N -L 0.0.0.0:9010:127.0.0.1:9010
 ```
 
 That way you will be able to hook up VisualVM to it using 127.0.0.1:9010
